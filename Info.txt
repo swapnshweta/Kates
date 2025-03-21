@@ -1,0 +1,46 @@
+install node js
+
+npm init -y
+npm i express
+
+touch index.js
+node index.js
+
+
+Dockerizing our application
+We will dockerize the application by creating three files:
+
+.dockignore
+  node_modules
+Dockerfile
+
+docker-compose.yml
+
+
+docker compose up
+docker compose build
+
+
+Kubernetes
+
+Pods, Deployments, and Services
+
+Create the deployment
+
+deployment.yaml
+
+kubectl get deployments
+kubectl apply -f deployment.yaml
+changes in the deployement.yaml and docker compose files
+kubectl get deployments
+
+kubectl get pods
+
+
+Create the service
+service.yaml 
+kubectl get services
+
+kubectl apply -f service.yaml
+
+kubectl get services
